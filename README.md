@@ -11,3 +11,10 @@ Usage:
 ```
 docker run --rm --privileged --tty --interactive --volume "/full/path/to/unzipped/image.img:/images/image.img" remmelt/TODO
 ```
+or use the supplied script:
+```
+./run.sh image.img
+```
+
+Good luck and let me know if this worked for you!
+
