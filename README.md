@@ -1,0 +1,13 @@
+# Raspbian wifi pw writer
+
+If you want to set up a Raspberry Pi without using a screen or keyboard, also known as headless, and
+you have a Pi with wifi, you will need to edit the downloaded Raspbian image file before booting up.
+This is easier said than done on some operating systems, like OSX. Docker to the rescue!
+
+This image can be used for writing the `wpa_supplicant.conf` to the correct location in the image. It
+also enables ssh access. Find the Pi's IP address in your router.
+
+Usage:
+```
+docker run --rm --privileged --tty --interactive --volume "/full/path/to/unzipped/image.img:/images/image.img" remmelt/TODO
+```
