@@ -9,12 +9,13 @@ also enables ssh access. Find the Pi's IP address in your router.
 
 Usage:
 ```
-docker run --rm --privileged --tty --interactive --volume "/full/path/to/unzipped/image.img:/images/image.img" remmelt/TODO
+docker run --rm --privileged --tty --interactive --volume "/full/path/to/unzipped/image.img:/images/image.img" remmelt/docker-rpi-wifi-pw-setter
 ```
+
 or use the supplied script:
 ```
 ./run.sh image.img
 ```
 
-Good luck and let me know if this worked for you!
 
+Good luck and let me know if this worked for you!
