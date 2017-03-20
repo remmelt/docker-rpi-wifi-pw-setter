@@ -9,4 +9,4 @@ readonly d="$(dirname ${1})"
 readonly f="$(basename ${1})"
 readonly path="$(cd "$d" && pwd)"
 
-docker run --rm --privileged --tty --interactive --volume "${path}/${f}:/images/image.img"
+docker run --rm --privileged --tty --interactive --volume "${path}/${f}:/images/image.img" remmelt/docker-rpi-wifi-pw-setter
