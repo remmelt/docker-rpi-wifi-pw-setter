@@ -1,5 +1,7 @@
 # Raspbian wifi pw writer
 
+See [this blog post](http://blog.remmelt.com/2017/03/20/easy-headless-setup-for-raspberry-pi-zero-w-on-osx/) for more details.
+
 If you want to set up a Raspberry Pi without using a screen or keyboard, also known as headless, and
 you have a Pi with wifi, you will need to edit the downloaded Raspbian image file before booting up.
 This is easier said than done on some operating systems, like OSX. Docker to the rescue!
