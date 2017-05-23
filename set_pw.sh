@@ -26,7 +26,7 @@ echo
 mkdir -p /mnt/disk1 /mnt/disk2
 
 for nr in 1 2; do
-    i=$(fdisk -l "${img}" | grep "${img}${nr}" | awk '{print "offset=" $2*512 ",sizelimit=" $3*512}')
+    i=$(fdisk -l "${img}" | grep "${img}${nr}" | awk '{printf "offset=%d", $2*512}')
     mount -o loop,${i} "${img}" /mnt/disk${nr}
 done
 
